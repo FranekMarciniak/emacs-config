@@ -1,0 +1,92 @@
+(straight-use-package 'general)
+(evil-mode)
+(general-define-key
+ :keymaps 'isearch-mode-map
+ "<escape>" 'isearch-abort)
+
+(general-create-definer my-leader-def
+  :prefix "SPC")
+
+(my-leader-def
+  :keymaps '(normal visual emacs)
+  "fc" 'copy-file
+  "fCd" 'dos2unix
+  "fCu" 'unix2dos
+  "fD" 'delete-file-and-buffer
+  "fD" 'delete-file-and-buffer
+  "fj" 'dired-jump
+  "fl" 'find-file-literally
+  "fL" 'locate
+  "fo" 'open-file-externally
+  "fR" 'rename-file-and-buffer
+  "fs" 'save-buffer
+  "fS" 'save-some-buffers
+  "fD" 'delete-file-and-buffer
+  "fd" 'dired
+  ";" 'evilnc-comment-operator
+  "cy" 'evilnc-comment-and-yank
+  "cp" 'evilnc-comment-or-uncomment-paragraphs
+  "ff" 'find-file
+  "pf" 'projectile-find-file
+  "ph" 'projectile-ag
+  "bb" 'counsel-switch-buffer
+  "ss" 'spacemacs/swiper-region-or-symbol
+  "/" 'evil-ex-search-word-forward
+  "w=" 'balance-windows
+  "wc" 'delete-window
+  "wh" 'evil-window-left
+  "wj" 'evil-window-down
+  "wk" 'evil-window-up
+  "wl" 'evil-window-right
+  "wH" 'evil-window-move-far-left
+  "wJ" 'evil-window-move-very-bottom
+  "wK" 'evil-window-move-very-top
+  "wL" 'evil-window-move-far-right
+  "ws" 'split-window-below
+  "wS" 'spacemacs/split-window-below-and-focus
+  "wu" 'winner-undo
+  "wU" 'winner-redo
+  "ww" 'other-window
+  "TAB" 'spacemacs/alternate-buffer
+  "bd" 'kill-this-buffer
+  "bk" 'kill-buffer
+  "bK" 'kill-other-buffers
+  "pb" 'projectile-switch-to-buffer
+  "pd" 'projectile-find-dir
+  "pD" 'projectile-dired
+  "pf" 'projectile-find-file
+  "pp" 'projectile-switch-project
+  "pr" 'projectile-recentf
+  "pR" 'projectile-replace
+  "ps" 'projectile-ripgrep
+  "py" 'projectile-find-tag
+  "en" 'next-error
+  "ep" 'previous-error
+  "qq" 'save-buffers-kill-terminal
+  "qQ" 'kill-emacs
+  "qr" 'restart-emacs
+  "qs" 'save-buffers-kill-emacs
+  "qz" 'delete-frame
+  "gb" 'magit-blame
+  "gB" 'magit-blame-quit
+  "gc" 'magit-commit
+  "gC" 'magit-checkout
+  "gd" 'magit-diff
+  "gD" 'magit-diff-working-tree
+  "ge" 'magit-ediff-compare
+  "gE" 'magit-ediff-show-working-tree
+  "gf" 'magit-fetch
+  "gF" 'magit-pull
+  "gHc" 'magit-diff-clear-highlights
+  "gHh" 'magit-log-highlight-history
+  "gHt" 'magit-log-highlight-tags
+  "gi" 'magit-init
+  "gI" 'helm-gitignore
+  "gl" 'magit-log-all
+  "gL" 'magit-log-buffer-file
+  "gP" 'magit-push
+  "gs" 'magit-status
+  "gS" 'magit-stage-file
+  "gm" 'magit-show-commit
+  "gt" 'git-timemachine
+  "gU" 'magit-unstage-file)
