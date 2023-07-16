@@ -32,5 +32,5 @@
 (load "~/.emacs.d/multiple-cursors.el")
 (load "~/.emacs.d/dired-open.el")
 (load "~/.emacs.d/keybindings.el")
-
+(load "~/.emacs.d/theme.el")
 

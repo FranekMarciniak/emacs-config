@@ -1,1 +1,1 @@
-("~/sealious-playground/" "~/.config/emacs/")
+("~/typetester/" "~/sealious-playground/" "~/.config/emacs/")

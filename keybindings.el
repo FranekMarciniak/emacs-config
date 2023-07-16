@@ -7,8 +7,13 @@
 (general-create-definer my-leader-def
   :prefix "SPC")
 
+(general-define-key 
+ :keymaps '(insert)
+ "C-SPC" 'company-complete
+  )
 (my-leader-def
   :keymaps '(normal visual emacs)
+  "SPC" 'counsel-M-x
   "fc" 'copy-file
   "fCd" 'dos2unix
   "fCu" 'unix2dos
@@ -30,7 +35,6 @@
   "pf" 'projectile-find-file
   "ph" 'projectile-ag
   "bb" 'counsel-switch-buffer
-  "ss" 'spacemacs/swiper-region-or-symbol
   "/" 'evil-ex-search-word-forward
   "w=" 'balance-windows
   "wc" 'delete-window
@@ -43,11 +47,9 @@
   "wK" 'evil-window-move-very-top
   "wL" 'evil-window-move-far-right
   "ws" 'split-window-below
-  "wS" 'spacemacs/split-window-below-and-focus
   "wu" 'winner-undo
   "wU" 'winner-redo
   "ww" 'other-window
-  "TAB" 'spacemacs/alternate-buffer
   "bd" 'kill-this-buffer
   "bk" 'kill-buffer
   "bK" 'kill-other-buffers
