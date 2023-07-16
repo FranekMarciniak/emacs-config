@@ -1,6 +1,6 @@
  ;; add (load "~/.config/emacs/config.el") to init.el to load this file
 (setq comp-deferred-compilation t) ;; to enable JIT compilation (gccemacs)
-(load "~/.config/emacs/straight.el")
+(load "~/.emacs.d/straight.el")
 (setq tab-width 4)
 (show-paren-mode)
 
