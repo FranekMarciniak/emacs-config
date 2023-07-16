@@ -20,3 +20,6 @@ undo-history
 url
 #*
 *~
+.*
+history
+recentf

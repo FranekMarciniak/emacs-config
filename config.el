@@ -33,4 +33,5 @@
 (load "~/.emacs.d/dired-open.el")
 (load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/theme.el")
-
+(load "~/.emacs.d/dashboard.el")
+(load "~/.emacs.d/fly-inline-errors.el")
