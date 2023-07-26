@@ -1,4 +1,5 @@
 (straight-use-package 'general)
+(straight-use-package 'evil)
 (evil-mode)
 (general-define-key
  :keymaps 'isearch-mode-map
